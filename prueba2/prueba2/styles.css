@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #750505;
+    color: #fff;
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Estilos para el logotipo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilos para los botones */
+.button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(20, 5, 5, 0);
+    border-radius: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #750505;
+    color: white;
+}
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #750505;
+    color: #fff;
+    text-align: center; /* Centra el contenido en la página */
+}
+
+/* Estilos para el encabezado */
+header {
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    position: absolute;
+    top: 60%; /* Centra verticalmente en relación con el viewport */
+    left: 50%; /* Centra horizontalmente en relación con el viewport */
+    transform: translate(-50%, -50%); /* Centra el contenido en el medio */
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para el botón */
+.button {
+    background-color: red; /* Color de fondo rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff0000; /* Cambia el color de fondo al hacer hover */
+    border-radius: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #750505;
+    color: white;
+}

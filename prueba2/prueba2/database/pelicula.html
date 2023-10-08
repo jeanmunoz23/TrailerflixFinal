@@ -1,0 +1,42 @@
+<!-- peliculas.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas</title>
+   
+</head>
+<body>
+    <h1>Listado de Películas</h1>
+    <ul id="listaPeliculas">
+        
+    </ul>
+    
+</body>
+
+<script>
+    // Función para cargar y mostrar las películas desde el JSON
+    function cargarPeliculas() {
+        fetch('database/Trailerflix.json') 
+            .then(response => response.json())
+            .then(data => {
+                // Obtiene el contenedor donde se mostrarán las películas
+                const listaPeliculas = document.getElementById('listaPeliculas');
+
+                // Recorre los datos del JSON y crea elementos de lista para cada película
+                data.forEach(pelicula => {
+                    const peliculaItem = document.createElement('li');
+                    peliculaItem.textContent = `Título: ${pelicula.titulo}, Género: ${pelicula.genero}, Director: ${pelicula.director}`;
+                    listaPeliculas.appendChild(peliculaItem);
+                });
+            })
+            .catch(error => {
+                console.error('Error al cargar el archivo JSON de películas:', error);
+            });
+    }
+
+    // Llama a la función para cargar y mostrar las películas cuando se cargue la página
+    window.addEventListener('load', cargarPeliculas);
+</script>
+</html>
